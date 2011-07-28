@@ -1,5 +1,9 @@
+------
 LINEUP
+------
 
+
+-----
 INTRO
 
 LineUp Temporarily adds paths to your PATH environment variable using as few keystrokes as possible.
@@ -17,6 +21,13 @@ LineUp only changes the PATH within the scope of your command prompt session. It
 Inspired by pik.
 
 
+----
+NOTE
+
+This is prototype code written in 1h. It works on my machine. It has no tests or anything.
+
+
+------------
 INSTALLATION
 
 No installer or anything
@@ -25,6 +36,7 @@ No installer or anything
 2. Add C:\Program Files (x86)\LineUp\ to your path - see http://www.java.com/en/download/help/path.xml
 
 
+-----
 USAGE
 
 Example:
@@ -55,16 +67,13 @@ D:\Dev>
 ___________________________________________________________________________________________________
 
 
+----
 TODO
 
-Add some tests
+Rewrite with tests
 Add more things to the config
 Init config from a file
 Downloadable configs
-Use lu for most common use case, e.g. to replace lu setpath
-
-
-
-NOTE
-
-This is a prototype written in 45m to see if it was worth pursuing. It has no tests, installers or anything.
+Use lu for most common use case, e.g. "lu .net 4.0", then lusetup for config / status etc
+Powershell
+Test on a few other environments
