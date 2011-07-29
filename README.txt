@@ -44,8 +44,7 @@ lu setpath .net 4.0
 lu setpath .net 3.5
 lu setpath .net 2.0
 
-It is intended to support all sorts of other tools that you might not want cluttering up your machines path permanently
-
+It is intended to support all sorts of other tools that you might not want permanently in your machine's path 
 
 
 Inspired by pik - http://rubygems.org/gems/pik
