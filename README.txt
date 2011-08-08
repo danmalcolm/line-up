@@ -21,14 +21,14 @@ Copyright (c) 2009 Microsoft Corporation.  All rights reserved.
 D:\Dev>where msbuild
 INFO: Could not find files for the given pattern(s).
 
-D:\Dev>lu setpath .net 4.0
+D:\Dev>lu use .net 4.0
 Running LineUp
 OK: Set path "C:\Windows\Microsoft.NET\Framework\v4.0.30319\" for component ".net", version "4.0"
 
 D:\Dev>where msbuild
 C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe
 
-D:\Dev>lu setpath .net 3.5
+D:\Dev>lu use .net 3.5
 Running LineUp
 OK: Set path "C:\Windows\Microsoft.NET\Framework\v3.5\" for component ".net", version "3.5"
 
@@ -40,9 +40,9 @@ ________________________________________________________________________________
 
 The options are hardcoded for now (see DemoConfigurationBuilder) and just contain the main .net framework versions:
 
-lu setpath .net 4.0
-lu setpath .net 3.5
-lu setpath .net 2.0
+lu use .net 4.0
+lu use .net 3.5
+lu use .net 2.0
 
 It is intended to support all sorts of other tools that you might not want permanently in your machine's path 
 
@@ -53,7 +53,7 @@ Inspired by pik - http://rubygems.org/gems/pik
 ----
 NOTE
 
-This is prototype code written in 1h. It works on my machine. It has no tests or anything.
+This is based on a proof-of-concept prototype code written in 1h and is slowly being improved.
 
 
 ------------
