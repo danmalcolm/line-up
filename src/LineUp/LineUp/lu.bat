@@ -16,5 +16,4 @@ IF "%verbose%" == "1" ECHO Setting path from file: %new_path%
 SET PATH=%new_path%
 
 :END
-IF "%verbose%" == "1" PAUSE
 IF EXIST %temp_path_file% DEL %temp_path_file%

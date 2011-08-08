@@ -52,7 +52,7 @@
     <Compile Include="PathMonkeyer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Commands\SetPath.cs" />
+    <Compile Include="Commands\UseCommand.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="lu.bat">

@@ -5,7 +5,7 @@ using LineUp.Configuration;
 
 namespace LineUp.Commands
 {
-    public class SetPath
+    public class UseCommand
     {
         private static readonly Config Config = DemoConfigBuilder.Build();
 
@@ -13,7 +13,7 @@ namespace LineUp.Commands
         {
             if(args.Length < 2)
             {
-                Console.WriteLine("Expected 2 arguments, e.g. lu set .net 3.5, or lu .net 35");
+                Console.WriteLine("Expected 2 arguments, e.g. lu use .net 3.5");
                 return;
             }
             string componentName = args[0];
@@ -34,7 +34,7 @@ namespace LineUp.Commands
 
             WriteNewPathToFileUsedByBatchFile(newPath);
 
-            Console.WriteLine(@"OK: Set path ""{0}"" for component ""{1}"", version ""{2}""", version.Path, component.Name, version.Name);
+            Console.WriteLine(@"OK: Using path ""{0}"" for component ""{1}"", version ""{2}""", version.Path, component.Name, version.Name);
         }
 
         private static void WriteNewPathToFileUsedByBatchFile(string newPath)

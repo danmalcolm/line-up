@@ -35,9 +35,9 @@ namespace LineUp.Tests.EndToEnd.UseCommandSpecs
             {
                 string.Format("set path={0}", InitialPath),
                 string.Format("cd {0}", PathToLineUp),
-                "lu setpath .net 3.5",
+                "lu use .net 3.5",
                 "echo %path%",
-                "lu setpath .net 4.0",
+                "lu use .net 4.0",
                 "echo %path%"
             };
             result = CommandSession.Execute(commands);

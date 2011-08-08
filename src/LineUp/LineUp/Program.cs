@@ -17,11 +17,11 @@ namespace LineUp
                 ShowUsage();
                 return;
             }
-            string command = args.First();
+            string command = args.First().ToLowerInvariant();
             switch (command)
             {
-                case "setpath":
-                    new SetPath().Execute(args.Skip(1).ToArray());
+                case "use":
+                    new UseCommand().Execute(args.Skip(1).ToArray());
                     break;
                 default:
                     ShowUsage();
@@ -37,7 +37,7 @@ namespace LineUp
         private static void ShowUsage()
         {
             Console.WriteLine("Unable to work out what you're trying to do.");
-            Console.WriteLine(@"Example usage: lu setpath <component> <version>");
+            Console.WriteLine(@"Example usage: lu use <component> <version>");
         }
     }
 }

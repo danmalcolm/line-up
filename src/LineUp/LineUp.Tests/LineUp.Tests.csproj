@@ -68,9 +68,7 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="EndToEnd\Tool\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="EndToEnd\LineUp\readme.txt" />
   </ItemGroup>
