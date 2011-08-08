@@ -7,6 +7,6 @@ _ReSharper.*
 *.suo
 *.cache
 ~$*
-src\LineUp\LineUp.Tests\EndToEnd\LineUp\*.*
+src/LineUp/LineUp.Tests/EndToEnd/LineUp/*
 
 
