@@ -1,0 +1,1 @@
+﻿Copy of LineUp.exe and scripts used by end-to-end tests are copied here via script in post-build event
