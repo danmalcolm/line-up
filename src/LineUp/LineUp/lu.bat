@@ -1,19 +1,11 @@
 @ECHO off
 SET verbose=0
 
-SET temp_path_file=%USERPROFILE%\LineUp.NewPath.temp
-IF "%verbose%" == "1" ECHO Using temporary file "%temp_path_file%" for new path
-
-IF EXIST %temp_path_file% DEL %temp_path_file%
+SET modify_path_file=%TEMP%\LineUp\modify_path.bat
+IF "%verbose%" == "1" ECHO Using temporary file "%modify_path_file%" for new path
 
 lineup.exe %*
 
-IF EXIST %temp_path_file% set /p new_path=<%temp_path_file%
+IF EXIST %modify_path_file% CALL %modify_path_file%
 
-IF ("%new_path%") == ("") GOTO END
-
-IF "%verbose%" == "1" ECHO Setting path from file: %new_path%
-SET PATH=%new_path%
-
-:END
-IF EXIST %temp_path_file% DEL %temp_path_file%
+IF EXIST %modify_path_file% DEL %modify_path_file%
