@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.0.2\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="nunit.framework">
       <HintPath>..\packages\NUnit.2.5.10.11092\lib\nunit.framework.dll</HintPath>
     </Reference>
@@ -60,6 +63,9 @@
     <Compile Include="Common\ContextSpecification.cs" />
     <Compile Include="Common\PathEnvironmentVariableUtility.cs" />
     <Compile Include="Common\PathUtility.cs" />
+    <Compile Include="Configuration\TestConfiguration\Config.cs" />
+    <Compile Include="Configuration\TestConfiguration\DemoConfigBuilder.cs" />
+    <Compile Include="Configuration\ConfigurationFileReaderSpecs.cs" />
     <Compile Include="EndToEnd\CommandLineTestingContext.cs" />
     <Compile Include="EndToEnd\RevertCommandSpecs.cs" />
     <Compile Include="EndToEnd\UseCommandSpecs.cs" />
