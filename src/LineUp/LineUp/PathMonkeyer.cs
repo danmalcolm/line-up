@@ -13,7 +13,7 @@ namespace LineUp
          {
              var path = Environment.GetEnvironmentVariable("PATH", EnvironmentVariableTarget.Process) ?? "";
              var paths = path.Split(new[] {";"}, StringSplitOptions.RemoveEmptyEntries).Except(component.Versions.Select(x => x.Path));
-             var newPath = string.Join(";", paths.Concat(new[] {version.Path}).ToArray());
+             var newPath = string.Join(";", paths.Concat(new[] { version.Path }).ToArray());
              return newPath;
          }
     }

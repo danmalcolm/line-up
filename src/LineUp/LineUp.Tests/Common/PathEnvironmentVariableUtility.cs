@@ -2,12 +2,13 @@ using System;
 
 namespace LineUp.Tests.Common
 {
-    public class EnvironmentUtility
+    public class PathEnvironmentVariableUtility
     {
-        public static string[] GetItemsInPath(string path)
+        public static string[] GetLocationsInPath(string path)
         {
             return path.Split(new[] {';'}, StringSplitOptions.RemoveEmptyEntries);
         }
 
+        
     }
 }

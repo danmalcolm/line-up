@@ -58,8 +58,10 @@
     <Compile Include="Common\CommandLineTesting\CommandSessionResultSpecs.cs" />
     <Compile Include="Common\CommandLineTesting\CommandSessionSpecs.cs" />
     <Compile Include="Common\ContextSpecification.cs" />
-    <Compile Include="Common\EnvironmentUtility.cs" />
+    <Compile Include="Common\PathEnvironmentVariableUtility.cs" />
     <Compile Include="Common\PathUtility.cs" />
+    <Compile Include="EndToEnd\CommandLineTestingContext.cs" />
+    <Compile Include="EndToEnd\RevertCommandSpecs.cs" />
     <Compile Include="EndToEnd\UseCommandSpecs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Common\Specification.cs" />
@@ -68,7 +70,12 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\LineUp\LineUp.csproj">
+      <Project>{935E42A1-18F8-4777-995F-BD06AE8C228E}</Project>
+      <Name>LineUp</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="EndToEnd\LineUp\readme.txt" />
   </ItemGroup>
