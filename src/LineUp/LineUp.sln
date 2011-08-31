@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LineUp", "LineUp\LineUp.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LineUp.Tests", "LineUp.Tests\LineUp.Tests.csproj", "{A617A31F-B128-4971-AA0E-5C740316F7FE}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "LineUp.Setup", "LineUp.Setup\LineUp.Setup.vdproj", "{237EF706-4D29-4634-84BB-9054A73716D2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,12 @@ Global
 		{A617A31F-B128-4971-AA0E-5C740316F7FE}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{A617A31F-B128-4971-AA0E-5C740316F7FE}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{A617A31F-B128-4971-AA0E-5C740316F7FE}.Release|x86.ActiveCfg = Release|Any CPU
+		{237EF706-4D29-4634-84BB-9054A73716D2}.Debug|Any CPU.ActiveCfg = Debug
+		{237EF706-4D29-4634-84BB-9054A73716D2}.Debug|Mixed Platforms.ActiveCfg = Debug
+		{237EF706-4D29-4634-84BB-9054A73716D2}.Debug|x86.ActiveCfg = Debug
+		{237EF706-4D29-4634-84BB-9054A73716D2}.Release|Any CPU.ActiveCfg = Release
+		{237EF706-4D29-4634-84BB-9054A73716D2}.Release|Mixed Platforms.ActiveCfg = Release
+		{237EF706-4D29-4634-84BB-9054A73716D2}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
