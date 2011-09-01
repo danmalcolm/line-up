@@ -70,6 +70,7 @@
     <Compile Include="Setup\CustomActions\AddLineUpToPath.Designer.cs">
       <DependentUpon>AddLineUpToPath.cs</DependentUpon>
     </Compile>
+    <Compile Include="Setup\CustomActions\PathUpdater.cs" />
     <Compile Include="Utility\EnvironmentVariables.cs" />
     <Compile Include="Utility\PathEnvironmentVariable.cs" />
   </ItemGroup>

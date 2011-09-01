@@ -29,6 +29,20 @@ namespace LineUp.Setup.CustomActions
             {
                 string lineUpPath = Path.GetDirectoryName(Context.Parameters["assemblypath"]);
                 message.AppendLine("Adding path to LineUp: " + lineUpPath);
+                string currentPath = PathUpdater.GetMachinePath();
+                message.AppendLine("Current path environment variable is: " + currentPath);
+                if (!currentPath.Contains(lineUpPath))
+                {
+                    string newPath = string.Concat(currentPath, ";", lineUpPath);
+                    message.AppendLine("Updating path to: " + newPath);
+                    PathUpdater.SetMachinePath(newPath);
+                }
+                else
+                {
+                    message.AppendLine("LineUp already in path");
+                }
+
+                
             }
             File.WriteAllText("C:\\temp\\install.txt", message.ToString());
         }

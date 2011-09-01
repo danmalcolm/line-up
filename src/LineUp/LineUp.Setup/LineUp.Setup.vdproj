@@ -188,7 +188,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:LineUp"
         "ProductCode" = "8:{FFE3BB38-2572-4F18-A4DC-E4D9EB77EC14}"
-        "PackageCode" = "8:{6F098321-1872-41A1-9674-AC738A0398BF}"
+        "PackageCode" = "8:{C0881A3C-F6A7-415E-AFCF-CDD91DE13255}"
         "UpgradeCode" = "8:{6D898F34-4DDA-458E-A87A-8CBA118BADAC}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
