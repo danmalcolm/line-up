@@ -24,12 +24,12 @@ namespace LineUp.Setup.CustomActions
             base.Install(stateSaver);
             var message = new StringBuilder();
             message.AppendLine("running custom Install action " + DateTime.Now);
-            foreach (string key in Context.Parameters.Keys)
+            bool addToPath = Context.Parameters["addToPath"] == "1";
+            if(addToPath)
             {
-                message.AppendFormat("{0}:{1}", key, Context.Parameters[key]);
-                message.AppendLine();
+                string lineUpPath = Path.GetDirectoryName(Context.Parameters["assemblypath"]);
+                message.AppendLine("Adding path to LineUp: " + lineUpPath);
             }
-            Context.LogMessage(message.ToString());
             File.WriteAllText("C:\\temp\\install.txt", message.ToString());
         }
 
@@ -37,14 +37,6 @@ namespace LineUp.Setup.CustomActions
         public override void Commit(IDictionary savedState)
         {
             base.Commit(savedState);
-            var message = new StringBuilder();
-            message.AppendLine("running custom Commit action " + DateTime.Now);
-            foreach (string key in Context.Parameters.Keys)
-            {
-                message.AppendFormat("{0}:{1}", key, Context.Parameters[key]);
-                message.AppendLine();
-            }
-            File.WriteAllText("C:\\temp\\commit.txt", message.ToString());
         }
 
         [System.Security.Permissions.SecurityPermission(System.Security.Permissions.SecurityAction.Demand)]

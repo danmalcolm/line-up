@@ -43,6 +43,27 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.0,Profile=Client"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4 Client Profile (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.0,Profile=Client"
+                    }
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.Windows.Installer.3.1"
+                    {
+                    "Name" = "8:Windows Installer 3.1"
+                    "ProductCode" = "8:Microsoft.Windows.Installer.3.1"
+                    }
+                }
+            }
         }
         "Release"
         {
@@ -59,6 +80,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
@@ -77,21 +106,7 @@
             "Sequence" = "3:1"
             "Identifier" = "8:_942B2CAC_1F53_4B93_910B_44778FE18420"
             "InstallerClass" = "11:TRUE"
-            "CustomActionData" = "8:"
-            }
-            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_F199ACBD40284CA0A00CE84EFF49840D"
-            {
-            "Name" = "8:Primary output from LineUp (Active)"
-            "Condition" = "8:"
-            "Object" = "8:_2B86FBF498B04D96905488B12F9C746E"
-            "FileType" = "3:2"
-            "InstallAction" = "3:2"
-            "Arguments" = "8:"
-            "EntryPoint" = "8:"
-            "Sequence" = "3:1"
-            "Identifier" = "8:_515B3503_AF42_4CF9_9E51_57BE5613A285"
-            "InstallerClass" = "11:TRUE"
-            "CustomActionData" = "8:"
+            "CustomActionData" = "8:/addToPath=\"[ADDTOPATH]\""
             }
         }
         "DefaultFeature"
@@ -173,7 +188,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:LineUp"
         "ProductCode" = "8:{FFE3BB38-2572-4F18-A4DC-E4D9EB77EC14}"
-        "PackageCode" = "8:{BEB4E590-EACA-4869-816A-1979A82EE7C8}"
+        "PackageCode" = "8:{6F098321-1872-41A1-9674-AC738A0398BF}"
         "UpgradeCode" = "8:{6D898F34-4DDA-458E-A87A-8CBA118BADAC}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -469,8 +484,8 @@
                             "Type" = "3:15"
                             "ContextData" = "8:"
                             "Attributes" = "3:0"
-                            "Setting" = "3:1"
-                            "Value" = "8:#1258"
+                            "Setting" = "3:2"
+                            "Value" = "8:Well done, that's champion that is. Please use Windows Update to check for any critical updates to the .NET Framework."
                             "DefaultValue" = "8:#1258"
                             "UsePlugInResources" = "11:TRUE"
                             }
@@ -581,7 +596,7 @@
                 {
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_075DC11F91EF4C71A864C1175A98BB8F"
                     {
-                    "Sequence" = "3:400"
+                    "Sequence" = "3:500"
                     "DisplayName" = "8:Confirm Installation"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
@@ -651,7 +666,7 @@
                     }
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_7668478F0C674DDD9853B046273ED54D"
                     {
-                    "Sequence" = "3:300"
+                    "Sequence" = "3:400"
                     "DisplayName" = "8:Installation Folder"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
