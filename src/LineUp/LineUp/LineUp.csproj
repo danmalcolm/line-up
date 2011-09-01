@@ -39,7 +39,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -61,6 +63,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\CustomActions\AddLineUpToPath.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Setup\CustomActions\AddLineUpToPath.Designer.cs">
+      <DependentUpon>AddLineUpToPath.cs</DependentUpon>
     </Compile>
     <Compile Include="Utility\EnvironmentVariables.cs" />
     <Compile Include="Utility\PathEnvironmentVariable.cs" />
