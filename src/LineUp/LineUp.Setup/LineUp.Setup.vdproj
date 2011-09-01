@@ -173,7 +173,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:LineUp"
         "ProductCode" = "8:{FFE3BB38-2572-4F18-A4DC-E4D9EB77EC14}"
-        "PackageCode" = "8:{2B71D592-96BD-4192-BAC5-E75359F0AB87}"
+        "PackageCode" = "8:{BEB4E590-EACA-4869-816A-1979A82EE7C8}"
         "UpgradeCode" = "8:{6D898F34-4DDA-458E-A87A-8CBA118BADAC}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -651,7 +651,7 @@
                     }
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_7668478F0C674DDD9853B046273ED54D"
                     {
-                    "Sequence" = "3:200"
+                    "Sequence" = "3:300"
                     "DisplayName" = "8:Installation Folder"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
@@ -686,7 +686,7 @@
                     }
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_C75D3B1AF16C4188843E543FDB86D462"
                     {
-                    "Sequence" = "3:110"
+                    "Sequence" = "3:200"
                     "DisplayName" = "8:RadioButtons   (2 buttons)"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
